@@ -48,7 +48,7 @@ $(window).resize(function () {
     if (responsive_viewport < 570) {
 
         // Change the order of the main container divs
-        $("#main-image").insertBefore("#text_intro");
+        $("#text_intro").insertBefore("#main-image");
         
     } else {
         

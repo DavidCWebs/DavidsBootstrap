@@ -21,24 +21,21 @@
         <div class="row">
           <div id="site-title">
             <div class="col-lg-6 col-md-6 col-sm-7">
-              <div class="col-lg-5 navbar-header"> <button type="button" class="navbar-toggle"
+              <div class="col-12 navbar-header"> <button type="button" class="navbar-toggle"
                   data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span
                     class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
                   <span class="icon-bar"></span> <span class="icon-bar"></span>
                 </button> <a title="Louise Roche McNamara" class="navbar-brand"
                   href="#">Louise Roche McNamara</a> </div>
-              <div class="col-lg-7"><img class="img-responsive" src="img/logo2.png"></div>
+              <div class="col-6"><img src="img/logo2.png"></div>
             </div>
           </div>
-          <h3><span style="color: white;"><span style="font-family: &quot;Lato&quot;,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;"><span
-                  style="font-weight: bold;">VVo</span></span></span><!-- /#site-title -->
-          </h3>
+          <!-- /#site-title -->
           <div class="col-lg-6 col-md-6">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="main-nav" class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
               <ul class="nav navbar-nav">
-                <li class="hidden"><br>
-                </li>
+                <li class="hidden"></li>
                 <li class="page-scroll"><a href="#about" data-id="about">About</a>
                 </li>
                 <li class="page-scroll"><a href="#priorities" data-id="priorities">My
@@ -47,7 +44,7 @@
               </ul>
             </div>
             <!-- /.navbar-nav --> </div>
-        </div>
+          <!-- /.navbar-collapse --> </div>
         <!-- /.row --> </div>
       <!-- /.container --> </nav>
     <div class="first_background"><!-- - this gets the background image -->
@@ -90,10 +87,14 @@
               <hr class="section-heading-spacer">
               <div class="clearfix"></div>
               <h2 class="section-heading">About Me</h2>
-              <p class="lead">FACT: Your customers use Google to find local
-                services. Are YOU online? Is your web-presence working for you?
-                For just €50 per month, you can rent a website like this and
-                instantly get an online presence.</p>
+              <p class="lead">I was born and raised in Shannon Town and now live
+                in Stonehall with my husband Ger and three sons Ged, Jamie and
+                Darren.</p>
+              <p class="lead">I work as an accounts administrator with a local
+                company. I have a keen interest in sports and I am currently the
+                Vice Treasurer of Shannon Town Utd AFC.</p>
+              <p class="lead"><br>
+              </p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6 col-xs-6"> <img class="img-responsive"
                 src="img/airport.jpg" alt=""> </div>
@@ -107,11 +108,21 @@
           <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6 col-xs-6">
               <hr class="section-heading-spacer">
+              <div class="clearfix"></div>
               <h2 class="section-heading">My Priorities</h2>
-              <p class="lead">We'll add your images and text. For a small
-                additional fee we can customise your website - choose your own
-                colours and fonts. We can also help you to write your site
-                content.</p>
+              <p class="lead">I promise to bring YOUR voice to the County
+                Council. My priorities are:</p>
+              <ul>
+                <li>Upgrade Shannon water treatment plant and sewage system</li>
+                <li>More Gardai patrolling our streets and industrial estates</li>
+                <li>Maintaining assistance from the EU so the family farms in
+                  Clare continue to survive</li>
+                <li>Acceptable teacher/pupil ratios and special needs provision
+                  in all schools</li>
+                <li>to ensure the continued promotion of Shannon Airport</li>
+                <li>to support a pro-business approach with fair rates and
+                  compliance regulations</li>
+              </ul>
             </div>
             <div class="col-lg-5 col-sm-pull-6 col-sm-6 col-xs-6"> <img class="img-responsive"
                 src="img/doge.png" alt=""> </div>
@@ -124,6 +135,7 @@
         <div class="row">
           <div class="col-lg-5 col-sm-6 col-xs-6">
             <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
             <h2 class="section-heading">Get Noticed. <br>
               Your Customers</h2>
             <p class="lead">FACT: Your customers use Google to find local
@@ -142,6 +154,7 @@
         <div class="row">
           <div class="col-lg-5 col-sm-6 col-xs-6">
             <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
             <h2 class="section-heading">Look Great on Mobile, Tablet &amp;
               Desktop</h2>
             <p class="lead">Your website will look great on all screen sizes -
