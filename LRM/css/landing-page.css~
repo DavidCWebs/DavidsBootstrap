@@ -64,7 +64,7 @@ color: #fff;
 	color: #f8f8f8;
 	/*background-color: rgba(0,0,0,.6);*/
 	background: url(../img/opaque-bg.png) repeat;
-	/*background: rgba(0,0,0,.6);*/
+	background: rgba(0,0,0,.6);
 	text-align: center;
 	z-index: 1;
 	-webkit-box-sizing: border-box;
@@ -171,10 +171,15 @@ color: #fff;
 	margin-top: 0;
 }
 
+.list-inline > li {
+    margin-bottom: 10px;
+} 
+
 @media (max-width: 1199px) {
 	ul.banner-social-buttons {
-		float: left;
+		clear: both;
 		margin-top: 15px;
+		text-align: center;
 	}	
 }
 
@@ -189,6 +194,8 @@ color: #fff;
 		display: block;
 		margin-bottom: 20px;
 		padding: 0;
+		text-align: center;
+		clear: both;
 	}
 
 	ul.banner-social-buttons > li:last-child {
@@ -210,6 +217,7 @@ color: #fff;
 	.intro-header {
     padding-top: 100px;
  	}
+ 
 }
 
 @media(max-width:500px){
