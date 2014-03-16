@@ -1,0 +1,46 @@
+jQuery(window).resize(function () {
+    var responsive_viewport = jQuery(window).width();
+    
+    //  console.log(responsive_viewport);
+    if (responsive_viewport < 980) {
+
+        // Change the order of the main container divs
+        jQuery("#project_image").insertBefore("#project_text");
+        
+        // Show #project_info_tab 
+        jQuery("#project_info_container").show();
+        
+        // Move the nav arrow p element
+        jQuery( "#project_info_container" ).after( jQuery( ".paramove" ) );
+        
+        // Move post content into #firstcol
+        jQuery( "#firstcol" ).prepend( jQuery( ".post_content" ) );
+        
+        // Move #project_info into #secondcol
+        jQuery( "#secondcol" ).prepend( jQuery( "#project_info" ) );
+        
+        // Hide .third container
+        jQuery("#project_text").hide();
+        
+    } else {
+        
+        // Show .third container
+        jQuery("#project_text").show();
+        
+        // Revert order of container divs
+        jQuery("#project_text").insertBefore("#project_image");
+        
+        // Put the nav arrow p back inside #project_text
+        jQuery( "#project_text" ).prepend( jQuery( ".paramove" ) );
+        
+        // Hide the half columns
+        jQuery(".columns_211").hide();
+        
+        // Move post_content and project_info back
+        jQuery( "#project_text" ).prepend( jQuery( ".post_content" ) );
+        jQuery( "#project_text" ).prepend( jQuery( "#project_info" ) );
+        jQuery( "#project_text" ).prepend( jQuery( ".paramove" ) );
+        
+    }
+
+});

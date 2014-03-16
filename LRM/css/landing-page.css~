@@ -13,10 +13,9 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
-/*#site-title a {
-background: url(../img/logo.png) no-repeat 100px 0;
-padding: 5px 0 0 0;
-}*/
+#site-title a:visited {
+	color: #fff;
+}
 
 #site-title img {
 }
@@ -48,6 +47,7 @@ color: #fff;
 
 .navbar-toggle {
 	border-radius: 0;
+	margin-right: 0;
 }
 
 .first_background {
@@ -193,6 +193,25 @@ color: #fff;
 	ul.banner-social-buttons > li:last-child {
 		margin-bottom: 0;
 	}	
+}
+
+@media(max-width:650px){
+	
+	#text-intro,
+	#main-image {
+		width: 100%;
+		}
+	
+	#main-image {
+		margin-bottom: 20px;
+		}
+}
+
+@media(max-width:500px){
+	
+	.col-xs-6 {
+		width: 100%;
+		}
 }
 
 footer {
