@@ -14,7 +14,7 @@
       rel="stylesheet" type="text/css">
     <!-- Add custom CSS here -->
     <link href="css/landing-page.css" rel="stylesheet">
-  </head>
+    </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -25,9 +25,9 @@
                   data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span
                     class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
                   <span class="icon-bar"></span> <span class="icon-bar"></span>
-                </button> <a title="Louise Roche McNamara" class="navbar-brand"
+                </button> <a title="Louise Roche McNamara" class="navbar-brand page-scroll" data-id="top"
                   href="#">Louise Roche McNamara</a> </div>
-              <div class="col-6"><img src="img/logo2.png"></div>
+              <div class="col-6"><a href="#"><img src="img/logo2.png"></a></div>
             </div>
           </div>
           <!-- /#site-title -->
@@ -43,11 +43,12 @@
                 <li class="page-scroll"><a href="#contact" data-id="contact">Contact</a></li>
               </ul>
             </div>
+            <a href="tel:+353863488966" class="active-phone"><i class="fa fa-phone"></i></a>
             <!-- /.navbar-nav --> </div>
           <!-- /.navbar-collapse --> </div>
         <!-- /.row --> </div>
       <!-- /.container --> </nav>
-    <div class="first_background"><!-- - this gets the background image -->
+    <div class="first_background" id="top"><!-- - this gets the background image -->
       <div class="intro-header"><!-- This gets an opaque bg colour to allow darkening of the bg image -->
         <div class="container">
           <div class="row">
@@ -63,10 +64,10 @@
                 <hr class="intro-divider">
                 <p class="lead">Contact me:</p>
                 <ul class="list-inline intro-social-buttons">
-                  <li><a href="https://twitter.com/Carawebs" class="btn btn-default btn-lg">
+                  <li><a href="mailto:louiserochemcnamara@eircom.net" title="Click to email me - opens your default email programme" class="btn btn-default btn-lg">
                   <i class="fa fa-envelope fa-fw"></i>
                       <span class="network-name">Email Me</span></a> </li>
-                  <li><a href="https://www.facebook.com/LouiseRocheMcnamara" class="btn btn-default btn-lg">
+                  <li><a href="https://www.facebook.com/LouiseRocheMcnamara" title="Click here to follow me on Facebook" class="btn btn-default btn-lg">
                   <i class="fa fa-facebook fa-fw"></i>
                       <span class="network-name">Follow me on Facebook</span></a> </li>
                 </ul>
@@ -74,7 +75,7 @@
               <!-- ./intro-message --> </div>
             <!-- ./col-lg-5 col-lg-offset-2 col-sm-6 -->
             <div id="main-image" class="col-lg-5 col-lg-offset-2 col-md-6 col-sm-6 col-xs-6">
-              <img class="img-responsive" src="img/louise-roche-mcnamara-web.jpg"> </div>
+              <img class="img-responsive main-img" src="img/louise-roche-mcnamara-shannon-main.jpg"> </div>
             <!-- ./col-lg-6 --> </div>
           <!-- ./row --> </div>
         <!-- /.container --> </div>
@@ -97,8 +98,9 @@
               <p class="lead"><br>
               </p>
             </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6 col-xs-6"> <img class="img-responsive"
-                src="img/airport.jpg" alt=""> </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6 col-xs-6">
+            <img class="img-responsive"src="img/louise-roche-mcnamara-shannon.jpg" alt="">
+            </div>
           </div>
         </div>
         <!-- /.container --> </div>
@@ -113,15 +115,15 @@
               <h2 class="section-heading">My Priorities</h2>
               <p class="lead">I promise to bring YOUR voice to the County
                 Council. My priorities are:</p>
-              <ul class="lead">
-                <li>Upgrade Shannon water treatment plant and sewage system</li>
-                <li>More Gardai patrolling our streets and industrial estates</li>
-                <li>Maintaining assistance from the EU so the family farms in
+              <ul class="lead fa-ul">
+                <li><i class="fa-li fa fa-check-circle"></i></i>Upgrade Shannon water treatment plant and sewage system</li>
+                <li><i class="fa-li fa fa-check-circle"></i>More Gardai patrolling our streets and industrial estates</li>
+                <li><i class="fa-li fa fa-check-circle"></i>Maintaining assistance from the EU so the family farms in
                   Clare continue to survive</li>
-                <li>Acceptable teacher/pupil ratios and special needs provision
+                <li><i class="fa-li fa fa-check-circle"></i>Acceptable teacher/pupil ratios and special needs provision
                   in all schools</li>
-                <li>to ensure the continued promotion of Shannon Airport</li>
-                <li>to support a pro-business approach with fair rates and
+                <li><i class="fa-li fa fa-check-circle"></i>To ensure the continued promotion of Shannon Airport</li>
+                <li><i class="fa-li fa fa-check-circle"></i>To support a pro-business approach with fair rates and
                   compliance regulations</li>
               </ul>
             </div>
@@ -131,61 +133,24 @@
         </div>
         <!-- /.container --> </div>
       <!-- /.content-section-b --> </section>
-    <div class="content-section-a">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-sm-6 col-xs-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Get Noticed. <br>
-              Your Customers</h2>
-            <p class="lead">FACT: Your customers use Google to find local
-              services. Are YOU online? Is your web-presence working for you?
-              For just €50 per month, you can rent a website like this and
-              instantly get an online presence.</p>
-          </div>
-          <div class="col-lg-5 col-lg-offset-2 col-sm-6 col-xs-6"> <img class="img-responsive"
-              src="img/USP-iPad-landscape.png" alt=""> </div>
-        </div>
-      </div>
-      <!-- /.container --> </div>
-    <!-- /.content-section-d -->
-    <div class="content-section-b">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-sm-6 col-xs-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Look Great on Mobile, Tablet &amp;
-              Desktop</h2>
-            <p class="lead">Your website will look great on all screen sizes -
-              desktop, laptop, iPad, iPhone and Android devices. Resize this
-              browser window to see how the template responds.</p>
-          </div>
-          <div class="col-lg-5 col-lg-offset-2 col-sm-6 col-xs-6"> <img class="img-responsive"
-              src="img/phones.png" alt=""> </div>
-        </div>
-      </div>
-      <!-- /.container --> </div>
-    <!-- /.content-section-d -->
-    <div class="banner">
+   <div class="banner">
       <div id="contact" class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-xs-12">
             <h2>Vote for me on 23rd May.</h2>
             <h3>I promise to be YOUR voice on the County Council.</h3>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-xs-12">
             <ul class="list-inline banner-social-buttons">
-              <li><a href="https://twitter.com/Carawebs" class="btn btn-default btn-lg">
-              <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span></a> </li>
               <li><a href="https://www.facebook.com/LouiseRocheMcnamara" class="btn btn-default btn-lg">
               <i class="fa fa-facebook fa-fw"></i>
                   <span class="network-name">Facebook</span></a> </li>
-              <li><a href="http://#" class="btn btn-default btn-lg">
+              <li><a href="#" class="nonclick-phone btn btn-default btn-lg">
               <i class="fa fa-phone fa-fw"></i>
                   <span class="network-name">Call 086 348 8966</span></a> </li>
+              <li><a href="tel:+353863488966" class="click-phone btn btn-default btn-lg">
+              <i class="fa fa-phone fa-fw"></i>
+                  <span class="network-name">Click here to call me</span></a> </li>
             </ul>
           </div>
         </div>

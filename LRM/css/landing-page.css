@@ -8,6 +8,29 @@ body, h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
+.active-phone {
+	display: none;
+	position: absolute;
+	right: 25px;
+	top: -50px;
+	font-size: 30px;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg); 
+	-o-transform:rotate(-90deg); 
+	transform:rotate(-90deg);
+	ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	color: #fff;
+	}
+
+.active-phone:hover {
+	color: #000;
+}
+
+.click-phone {
+	display: none;
+}
+
 .lead {
 	font-size: 18px;
 	font-weight: 400;
@@ -50,7 +73,7 @@ color: #fff;
 .first_background {
 	padding-top: 70px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	color: #f8f8f8;
-	background: url(../img/first-background.jpg) no-repeat center center;
+	background: url(../img/al.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
 	-webkit-box-sizing: border-box;
@@ -59,18 +82,35 @@ color: #fff;
 	
 }
 .intro-header {
-	padding-top: 150px; 
-	/*padding-bottom: 50px;*/
+	padding-top: 100px; 
+	padding-bottom: 50px;
 	color: #f8f8f8;
-	/*background-color: rgba(0,0,0,.6);*/
 	background: url(../img/opaque-bg.png) repeat;
-	background: rgba(0,0,0,.6);
+	background: rgba(0,0,0,.8);
 	text-align: center;
 	z-index: 1;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+.main-img {
+	border: 1px solid #fff;
+}
+
+.btn-lg {
+	border-radius: 0;
+}
+
+.fa-check-circle {
+	color: #008f45;
+}
+
+.fa-li {
+	top: 5px;
+	}
+
+
 
 /**********************************/
 .intro-message {
@@ -179,7 +219,12 @@ color: #fff;
 		clear: both;
 		margin-top: 15px;
 		text-align: center;
-	}	
+	}
+	
+	.banner {
+ 	text-align: center;
+ 	}
+
 }
 
 @media (max-width: 767px) {
@@ -188,6 +233,8 @@ color: #fff;
 		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 		font-size: 3em;
 	}
+
+
 
 	ul.banner-social-buttons > li {
 		display: block;
@@ -217,6 +264,7 @@ color: #fff;
     padding-top: 100px;
  	}
  
+ 
 }
 
 @media(max-width:500px){
@@ -224,6 +272,19 @@ color: #fff;
 	.col-xs-6 {
 		width: 100%;
 		}
+	
+	.active-phone {
+		display: block;
+		}
+
+	.click-phone {
+	display: block;
+	}
+
+	.nonclick-phone {
+	display: none;
+	}	
+	
 }
 
 footer {
