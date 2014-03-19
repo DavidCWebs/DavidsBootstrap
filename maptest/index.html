@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="David Egan" >
+
+    <title>Google Maps Demo Carawebs</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Theme CSS -->
+    <link href="css/maptest.css" rel="stylesheet">
+    <style>#map_canvas, #map_canvas_2, #map_canvas_3, #map_canvas_4, #map_canvas_5, #map_canvas_6, #map_canvas_7 { width:100%; height:510px; }</style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!-- Map 1 -->
+    <script>
+		var map4;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true,
+			styles: [
+				{"featureType":"poi","stylers":[{ "visibility": "off" }]},
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
+					{ "color": "#b5d334" },
+					{ "visibility": "on" },
+					{ "weight": 0.5 }]},
+				{"featureType": "road", "elementType": "geometry", "stylers": [
+					{ "weight": 0.5 },
+					{ "color": "#b5d334"}]},
+				{"featureType": "landscape", "stylers": [
+					{ "visibility": "on" },
+					{ "color": "#4b4b50" },]},
+				{"featureType": "transit.line", "stylers": [
+					 { "visibility": "off" }]},
+				{"featureType": "road", "elementType": "labels.text", "stylers": [
+					{ "visibility": "on" },
+					{ "invert_lightness": true },
+					{ "weight": 0.4 },
+					{ "color": "#ffffff" }]}
+			]
+		};
+
+		map4 = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map4,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map4.getCenter();
+			 google.maps.event.trigger(map4, "resize");
+			 map4.setCenter(center); 
+			});
+		</script>
+		<!-- Map 2 -->		
+		<script>
+			
+		var map2; //Set the map variable --- this is now available to both event listeners and the initialize() function
+			function initialize() {
+			  var mapOptions = {
+			   center: new google.maps.LatLng(51.5172,-0.1426),
+			   zoom: 16,
+			   mapTypeId: google.maps.MapTypeId.ROADMAP,
+			   styles: [
+				{"featureType":"poi","stylers":[{ "visibility": "off" }]},
+				{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]}
+				]
+			  };
+			  map2 = new google.maps.Map(document.getElementById("map_canvas_2"),
+						mapOptions);
+				var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+				var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+				var beachMarker = new google.maps.Marker({
+					position: myLatLng,
+					map: map2,
+					icon: image
+					});
+					}
+			google.maps.event.addDomListener(window, 'load', initialize);
+			google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map2.getCenter();
+			 google.maps.event.trigger(map2, "resize");
+			 map2.setCenter(center); 
+			});
+		</script>
+		<!-- Map 3 -->
+		<script>
+		var map3;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+			{"featureType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]},
+			{"featureType":"poi","stylers":[{ "visibility": "off" }]},
+			{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]}
+			]
+		};
+
+		map3 = new google.maps.Map(document.getElementById("map_canvas_3"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map3,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map3.getCenter();
+			 google.maps.event.trigger(map3, "resize");
+			 map3.setCenter(center); 
+			});
+		</script>		
+		<!-- Map 4 -->
+		<script>
+		var map1;
+		function initialize() {
+		var mapOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+			{"featureType":"poi","stylers":[{ "visibility": "off" }]},
+			{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]}
+			]
+		};
+		map1 = new google.maps.Map(document.getElementById('map_canvas_4'), mapOptions);
+		var image = 'http://carawebs.com/maptest/img/expedition-map-pin.png';
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map1,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map1.getCenter();
+			 google.maps.event.trigger(map1, "resize");
+			 map1.setCenter(center); 
+			});
+		</script>
+		<!-- Map 1 -->
+    <script>
+		var map5;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true,
+			styles: [
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
+					  { "color": "#4b4b50" },
+					  { "visibility": "on" },
+					  { "weight": 5 }]},
+				{"featureType": "landscape", "stylers": [
+				  { "visibility": "on" },
+				  { "color": "#a5a5a5" },
+				  ]
+				},
+				{"featureType": "transit.line", "stylers": [
+					  { "visibility": "off" }
+					]
+				},
+				{"featureType": "road", "elementType": "labels.text", "stylers": [
+				  { "visibility": "on" },
+				  { "invert_lightness": true },
+				  { "weight": 0.4 },
+				  { "color": "#ffffff" }
+				]
+				},
+				{"featureType":"water","stylers":[
+					{"hue":"#00B6FF"},
+					{"saturation":4.2},
+					{"lightness":-63.4},
+					{"gamma":1}
+				]},
+				{"featureType":"poi","stylers":[
+					{ "visibility": "off" }]
+					}
+			]
+		};
+
+		map5 = new google.maps.Map(document.getElementById("map_canvas_5"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map5,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map5.getCenter();
+			 google.maps.event.trigger(map5, "resize");
+			 map5.setCenter(center); 
+			});
+		</script>
+		<!-- map 6 -->
+		<script>
+		var map6;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
+					  { "color": "#a5a5a5" },
+					  { "visibility": "on" },
+					  { "weight": 0.7 }]},
+				{"featureType": "road", "elementType": "geometry", "stylers": [
+					  { "weight": 0.7 }
+					]},
+				{"featureType": "landscape", "stylers": [
+				  { "visibility": "on" },
+				  { "color": "#818185" },
+					]},
+				{"featureType": "transit.line", "stylers": [
+					  { "visibility": "off" }
+					]},
+				{"featureType": "road", "elementType": "labels.text", "stylers": [
+				  { "visibility": "on" },
+				  { "invert_lightness": true },
+				  { "weight": 0.8 },
+				  { "color": "#ffffff" }
+				]},
+				{"featureType":"water","stylers":[
+					{"hue":"#00B6FF"},
+					{"saturation":4.2},
+					{"lightness":-63.4},
+					{"gamma":1}
+				]},
+				{"featureType":"poi","stylers":[
+					{ "visibility": "off" }]
+					}
+				]
+		};
+
+		map6 = new google.maps.Map(document.getElementById("map_canvas_6"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map6,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map6.getCenter();
+			 google.maps.event.trigger(map6, "resize");
+			 map6.setCenter(center); 
+			});
+		</script>
+		<!-- Map 7 -->
+		<script>
+		var map7;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#a5a5a5" }, { "visibility": "off" }]},
+				{"featureType": "landscape", "stylers": [{ "visibility": "on" }, { "color": "#4b4b50" }]},
+				{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]},
+				{"featureType": "road", "stylers": [{ "color": "#818185" }]},
+                {"featureType": "road", "elementType": "labels.text", "stylers": [{ "visibility": "on" }, { "invert_lightness": true }, { "weight": 0.4 }, { "color": "#ffffff" }]},
+				{"featureType":"water","stylers":[{"hue":"#00B6FF"}, {"saturation":4.2}, {"lightness":-63.4}, {"gamma":1}]},
+				{"featureType":"poi","stylers":[{ "visibility": "off" }]}
+			]
+		};
+		map7 = new google.maps.Map(document.getElementById("map_canvas_7"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map7,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map7.getCenter();
+			 google.maps.event.trigger(map7, "resize");
+			 map7.setCenter(center); 
+			});
+		</script>
+    
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div id="site_title"><a class="navbar-brand" href="http://carawebs.com">
+                    Carawebs Google Maps Test Page
+                </a></div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section class="intro">
+            <div class="container content-section expedition-background">
+                <div id ="map-grid">
+                    <div class="map-box">
+                        <h2>Map 1</h1>
+                        <div id="map_canvas" class="map-border"></div>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 7</h1>
+                        <div id="map_canvas_7" class="map-border"></div>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 2</h1>
+                        <div id="map_canvas_2" class="map-border"></div>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 3</h1>
+                        <div id="map_canvas_3" class="map-border"></div>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 4</h1>
+                        <div id="map_canvas_4" class="map-border"></div>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 5</h1>
+                        <div id="map_canvas_5" class="map-border"></div>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 6</h1>
+                        <div id="map_canvas_6" class="map-border"></div>
+                    </div>
+                    <div class="gridbreak"></div>
+                </div>
+                <div class="row">
+			        <div id="contact" class="col-md-12">
+			        		<h2>Contact Us</h2>
+			                <p><a href:"mailto:info@carawebs.com">info@carawebs.com</a></p>
+			                <ul class="list-inline banner-social-buttons">
+			                    <li><a href="https://twitter.com/Carawebs" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+			                    </li>
+			                    <li><a href="https://plus.google.com/+Carawebs/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+			                    </li>
+			                </ul>
+			        </div>
+			      </div>            
+            
+            </div>
+    </section>
+    <!-- Core JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
