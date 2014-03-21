@@ -14,6 +14,9 @@ padding: 5px 0 0 40px;
 	-webkit-font-smoothing:antialiased;
 }
 
+.side-pad {padding: 0 40px;}
+.bottom-margin {margin-bottom: 40px;}
+
 .top-padding { 
 	padding-top:40px;
 }

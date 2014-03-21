@@ -30,6 +30,7 @@
 			zoom: 12,
 			center: new google.maps.LatLng(52.713211,-8.872517),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
 			disableDefaultUI: true,
 			styles: [
                 {"stylers":[{"visibility": "off" }]},
@@ -91,6 +92,7 @@
 			   center: new google.maps.LatLng(52.667586,-8.633722),
 			   zoom: 13,
 			   mapTypeId: google.maps.MapTypeId.ROADMAP,
+			   scrollwheel: false,
 			   styles: [
 				{"featureType":"poi","stylers":[{ "visibility": "off" }]},
 				{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]}
@@ -121,6 +123,7 @@
 			zoom: 12,
 			center: new google.maps.LatLng(53.342558,-6.222237),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
 			styles: [
 			{"featureType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]},
 			{"featureType":"poi","stylers":[{ "visibility": "off" }]},
@@ -155,6 +158,7 @@
 			zoom: 12,
 			center: new google.maps.LatLng(52.84021,-8.975243),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
 			styles: [
 			{"featureType":"poi","stylers":[{ "visibility": "off" }]},
 			{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]},
@@ -187,6 +191,7 @@
 			zoom: 12,
 			center: new google.maps.LatLng(52.84021,-8.975243),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
 			disableDefaultUI: true,
 			styles: [
 				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
@@ -245,6 +250,7 @@
 			zoom: 13,
 			center: new google.maps.LatLng(51.5172,-0.1426),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
 			styles: [
 				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
 					  { "color": "#a5a5a5" },
@@ -305,6 +311,7 @@
 			zoom: 12,
 			center: new google.maps.LatLng(52.931672,-9.345444),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
 			styles: [
 				{"featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#a5a5a5" }, { "visibility": "off" }]},
 				{"featureType": "landscape", "stylers": [{ "visibility": "on" }, { "color": "#4b4b50" }]},
@@ -347,7 +354,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <div id="site_title"><a class="navbar-brand" href="http://carawebs.com">
+                <div id="site_title"><a class="navbar-brand" href="http://carawebs.com/mapdemo">
                     Carawebs Google Maps Demo
                 </a></div>
             </div>
@@ -359,8 +366,6 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li><a href="http://carawebs.com/mapdemo">Main Maps Demo</a></li>
-                    <li><a href="http://carawebs.com/mapdemo/wide.html">Full Width Maps</a></li>
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
@@ -380,40 +385,38 @@
 					</div>
 		</div>
 		</div>
-            <div class="container expedition-background top-padding">
-				
-                <div id ="map-grid">
-                    <div class="map-box">
-                        <h2>Map 1</h1>
+            <div class="fluid-container expedition-background top-padding">
+            	<div class="row side-pad">
+            		<div class="col-md-12 bottom-margin"><h2>Map 1</h1>
                         <div id="map_canvas" class="map-border"></div>
-                    </div>
-                    <div class="map-box">
-                        <h2>Map 7</h1>
+                  </div>
+                  <div class="col-md-12 bottom-margin">
+                        <h2>Map 2</h1>
                         <div id="map_canvas_6" class="map-border"></div>
                     </div>
-                    <div class="map-box">
-                        <h2>Map 2</h1>
-                        <div id="map_canvas_7" class="map-border"></div>
-                    </div>
-                    <div class="map-box">
-                        <h2>Map 3</h1>
-                        <div id="map_canvas_2" class="map-border"></div>
-                    </div>
-                    <div class="map-box">
+                 <div class="col-md-12 bottom-margin">
+                     <h2>Map 3</h1>
+                     <div id="map_canvas_7" class="map-border"></div>
+                 </div>
+                 <div class="col-md-12 bottom-margin">
                         <h2>Map 4</h1>
+                        <div id="map_canvas_2" class="map-border"></div>
+                 </div>
+                 <div class="col-md-12 bottom-margin">
+                        <h2>Map 5</h1>
                         <div id="map_canvas_3" class="map-border"></div>
                     </div>
-                    <div class="map-box">
-                        <h2>Map 5</h1>
-                        <div id="map_canvas_4" class="map-border"></div>
-                    </div>
-                    <div class="map-box">
-                        <h2>Map 6</h1>
-                        <div id="map_canvas_5" class="map-border"></div>
-                    </div>
-                    <div class="gridbreak"></div>
-                </div>
-                <div class="row">
+                 <div class="col-md-12 bottom-margin">
+                     <h2>Map 6</h1>
+                     <div id="map_canvas_4" class="map-border"></div>
+                 </div>
+                 <div class="col-md-12 bottom-margin">
+                     <h2>Map 7</h1>
+                     <div id="map_canvas_5" class="map-border"></div>
+                 </div>
+               </div>
+				
+               <div class="row side-pad">
 			        <div id="contact" class="col-md-12">
 			        		<h2>Contact Us</h2>
 			                <p><a href:"mailto:info@carawebs.com">info@carawebs.com</a></p>
