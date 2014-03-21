@@ -1,0 +1,12 @@
+.thumbnail, .btn {
+	border-radius: 0;
+}
+
+.container .jumbotron {
+	border-radius: 0;
+}
+
+#header {
+	background: yellow;
+	height: 100px;
+}

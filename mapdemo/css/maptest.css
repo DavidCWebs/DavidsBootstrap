@@ -47,7 +47,7 @@ padding: 5px 0 0 40px;
 }
 
 .map-border {
-	border: solid 1px #b5d334;
+	border: solid 1px #ffffff;
 }
 
 
@@ -60,7 +60,8 @@ body {
 }
 
 .expedition-background {
-	background: #4b4b50;
+	/*background: #4b4b50;*/
+	background: #000;
 }
 
 html {
