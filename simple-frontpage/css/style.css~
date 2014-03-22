@@ -11,6 +11,6 @@ body {
 }
 
 .navbar-default {
-	background-color: none;
+	background-color: #fff;
 	border: none;
 }

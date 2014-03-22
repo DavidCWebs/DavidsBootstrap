@@ -14,3 +14,35 @@ body {
 	background-color: #fff;
 	border: none;
 }
+
+#thumb-grid {
+	text-align: justify;
+	font-size: 0.1px;
+	line-height: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+#thumb-grid:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+ 
+#thumb-grid .thumbnail {
+	display: inline-block;
+	width: 32%;
+	vertical-align: text-top;
+	text-align: left;
+	margin-bottom: 60px;
+	line-height: 1.428571429;
+	font-size: 14px;
+}
+
+.gridbreak {
+	content: '';
+	display: inline-block;
+	width: 48%;
+	height:0;
+}
