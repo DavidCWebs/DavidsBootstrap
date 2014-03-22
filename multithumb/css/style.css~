@@ -48,6 +48,6 @@
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color: #f80606;
+    background-color: #ffa0a0;
 }
 

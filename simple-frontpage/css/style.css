@@ -9,3 +9,8 @@ h4 {
 body {
 	font-family: 'Capriola', sans-serif;
 }
+
+.navbar-default {
+	background-color: #fff;
+	border: none;
+}
