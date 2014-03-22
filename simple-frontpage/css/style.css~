@@ -1,0 +1,11 @@
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Hammersmith One', sans-serif;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+}

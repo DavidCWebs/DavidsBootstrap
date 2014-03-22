@@ -1,0 +1,53 @@
+.thumbnail, .btn {
+	border-radius: 0;
+}
+
+.container .jumbotron {
+	border-radius: 0;
+}
+
+#thumb-grid {
+	text-align: justify;
+	font-size: 0.1px;
+	line-height: 0;
+}
+ 
+#thumb-grid:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+ 
+#thumb-grid .thumbnail {
+	display: inline-block;
+	width: 32%;
+	vertical-align: text-top;
+	text-align: left;
+	margin-bottom: 60px;
+	line-height: 1.428571429;
+	font-size: 14px;
+}
+
+.gridbreak {
+	content: '';
+	display: inline-block;
+	width: 48%;
+	height:0;
+}
+
+.fixed-header-padding {
+	padding-top: 100px;
+}
+
+.navbar-fixed-top {
+	background: #666;
+}
+
+.navbar a {
+	color: #fff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #ffa0a0;
+}
+
