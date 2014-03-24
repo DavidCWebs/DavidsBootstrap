@@ -1,3 +1,9 @@
+.thumbnail h4 {
+	color: #000;
+	text-align: center;
+	margin: 10px 0;
+}
+
 .mobile-tel {
 	display: none;
 	font-size: 14px;
