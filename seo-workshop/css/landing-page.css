@@ -13,8 +13,27 @@ p {
 	font-weight: 400;
 }
 
-h2, h3 {
+p.lead {
+	padding-right: 40px;
+}
+
+.no-top-margin {
 	margin-top: 0;
+}
+
+h3 {
+	font-size: 32px;
+	margin-top: 40px;
+}
+
+h2 {
+	font-size: 38px;
+	margin-top: 40px;
+}
+
+h4 {
+	font-size: 24px;
+	margin-top: 40px;
 }
 
 .lead {
