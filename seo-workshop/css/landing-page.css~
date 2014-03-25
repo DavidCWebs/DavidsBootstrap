@@ -9,11 +9,11 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 400;
 }
 
-h2 {
+h2, h3 {
 	margin-top: 0;
 }
 
@@ -32,6 +32,10 @@ h2 {
 
 .margin-top {
 	margin-top: 60px;
+}
+
+.modal-dialog {
+  width: 50%;
 }
 
 .video-wrapper {

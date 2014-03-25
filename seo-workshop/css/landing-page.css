@@ -13,7 +13,7 @@ p {
 	font-weight: 400;
 }
 
-h2 {
+h2, h3 {
 	margin-top: 0;
 }
 
@@ -32,6 +32,14 @@ h2 {
 
 .margin-top {
 	margin-top: 60px;
+}
+
+.margin-bottom {
+	margin-bottom: 60px;
+}
+
+.modal-dialog {
+  width: 50%;
 }
 
 .video-wrapper {
