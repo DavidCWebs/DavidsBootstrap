@@ -43,6 +43,7 @@
             		<li class="hidden"> <a href="#page-top"></a> </li>
                   <li class="page-scroll"><a href="#search-101">Search Basics</a></li>
                   <li class="page-scroll"><a href="#strategy">Online SEO Strategy</a></li>
+                  <li class="page-scroll"><a href="#webmaster-tools">Webmaster Tools</a></li>
                   <li class="page-scroll"><a href="#presentation">Keyword Exercise</a></li>
                   <li class="page-scroll"><a href="#contact">Contact</a></li>
                 </ul>
@@ -61,9 +62,9 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Digital Detectives</h1>
-                        <h3>Aligning Content With What Users Are Actually Searching For</h3>
+                        <h3>Aligning Content With Your Users</h3>
                         <p>Institution of Civil Engineers</p>
-                        <p class="lead">Workshop by <a href ="http://carawebs.com">carawebs.com</a></p>
+                        <p class="lead">Workshop by David Egan of <a href ="http://carawebs.com">carawebs.com</a></p>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li><a href="https://twitter.com/Carawebs" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -389,16 +390,34 @@
 
     </div>
     <!-- /.content-section-d -->
-    
-    <div id="presentation" class="content-section-a">
+    <div id="webmaster-tools" class="content-section-a">
 
         <div class="container">
 
             <div class="row">
                 <div class="col-sm-9">
-                    <h2 class="section-heading">Keyword Exercise</h2>
-                    <p class="lead">Click the button to access the Google Adwords account that we have set up for this workshop. This will open in a new browser tab.</p>
-                    <a href="http://www.google.com/adwords/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">Google Adwords</span></a>
+                	<h2>Using Google Webmaster Tools</h2>
+							<p class="lead">This tool allows you to see your website as Google sees it, including:
+							<ul class="lead">
+							<li>What pages have been indexed by Google</li>
+							<li>Site backlinks: incoming links from external sites</li>
+							<li>The keywords used when people reach your site through Google search</li>
+							</ul>
+							</p>
+							<h3>Using the Tool</h3>
+							<p class="lead">To use the tool, navigate to <a href="https://www.google.com/webmasters/tools/">Google Webmaster Tools</a> (or just Google that term) and login using the details provided.</p>
+							<h3>Search Queries</h3>
+							<p class="lead">Click on "Search Traffic" >> "Search Queries" to see a ranked list of queries that people entered into search 
+							and led to your site.</p>
+							<p class="lead">This page shows impressions, clicks, click through rate ("CTR"), as well as the average position of the site in 
+							search results for this query. Click the query on this page to see the individual pages on the site that have been clicked into as a 
+							result of this search query.</p>
+							<p class="lead">If a particular page receives a lot of impressions but has a poor click through rate, you should look at title tags 
+							and meta description of pages - it is likely that these are sub-optimal.</p>
+							<h3>Top Pages from Search</h3>
+							<p class="lead">On the "Search Queries" page, click the "Top Pages" tab to see your site pages ranked by the frequency 
+							that they are visited from Google search. This is a useful snapshot of how your different pages are performing.</p>
+							<p class="lead"></p>
                 </div>
                 
             </div>
@@ -408,71 +427,131 @@
 
     </div>
     <!-- /.content-section-b -->
-
     
     
-    <div class="content-section-b">
+    <div id="presentation" class="content-section-b">
 
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Look Great on Mobile, Tablet & Desktop</h2>
-                    <p class="lead">Your website will look great on all screen sizes - desktop, laptop, iPad, iPhone and Android devices. Resize this browser window to see how the template responds.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
-                </div>
-            </div>
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="section-heading">Keyword Exercise</h2>
+                    <p class="lead">Click the button below to access the Google Adwords account that we have set up for this workshop. 
+                    This will open in a new browser tab. You should have been emailed the login details for this account.</p>
+                    <p class="lead"><a href="http://www.google.com/adwords/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">Google Adwords Account</span></a></p>
+						<h3>Sample Keyword Analysis</h3>						
+						<p class="lead">Follow <a href="https://docs.google.com/spreadsheet/ccc?key=0Au7kFyoY91EmdEVyWFdtVUd1amVucXhORlVEcFQxT1E&usp=drive_web#gid=0" target="_blank">this link</a>
+						 to view a sample spreadsheet sorted into searches made per month. This is an example Keyword analysis that used the seed keywords:
+						 <ul class="lead">
+							 <li>"water"</li>
+							 <li>"water management"</li>
+							 <li>"waste water"</li>
+							 <li>"waste water management"</li>
+							 <li>"water supply system"</li>
+							 <li>"sustainable water management"</li>
+							 <li>"water infrastructure"</li>
+						 </ul>
+						 </p>
+						<h3>Keyword Analysis Instructions</h3>
+						<p class="lead">Click the button below for a pop-up with detailed instructions that will help you carry out your own the keyword analysis:</p>
+						<p class="lead"><a id="modal-3" href="#modal-container-3" class="btn btn-default btn-lg" data-toggle="modal"><span class="network-name">Detailed instructions: keywords exercise</span></a></p>
+							<div class="modal fade" id="modal-container-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 class="modal-title" id="myModalLabel">
+												Using the Google Keyword Planner Tool: Cheat Sheet
+											</h3>
+										</div>
+										<div class="modal-body">
+																				<p class="lead">Identify your user. Be specific - consider age, educational status, gender etc. and repeat this exercise as necessary 
+																				to target different users.</p>
+																				<p class="lead">Brainstorm your keywords with your user and with a particular resource (web page) in mind. 
+																				What words do you think your user would use when searching for this information? 
+																				Organise and expand on the keywords that you think are relevant to your user. 
+																				Start with one keyword and then expand on that word to turn it into a short phrase. These short phrases are called keyword stems.</p>
+																				<p class="lead">Type your keywords into a single column in a spreadsheet. You could have hundreds of words and word combinations - 
+																				Google Adwords can handle 200 phrases at a time - but you’re probably better off starting with no more than five or six tightly focused keyword stems.</p>
+																					<ul class="lead">
+																						<li>In Google Adwords, click on the menu item “Tools” in the top left hand side of the screen</li>
+																						<li>A drop down menu will appear. Click on “Keyword Planner”</li>
+																						<li>Look down the screen and click on “Search for new keyword and ad group ideas”</li>
+																						<li>Copy your keyword ideas from your spreadsheet and then paste them into the top box labelled “Your product or service”</li>
+																						<li>Click the blue button labelled “Get Ideas”</li>
+																						<li>Once you have clicked the “Get Ideas” button you will be presented with a table containing a list of “Ad group ideas” based on your keywords. This information is not relevant for this search exercise</li>
+																						<li>Click the tab labelled “Keyword Ideas”</li>
+																						<li>You should then have a screen that shows the keywords you inputted along with suggested keywords from Google</li>
+																						<li>Look through the suggested keywords carefully - not all of them will be relevant to your user</li>
+																						<li>You can download your keywords into a spreadsheet</li>
+																					</ul>
+																					<p class="lead">This is a very basic guide on how to use the keyword planner. Once you get familiar with the keyword planner 
+																					you can go on to filter the suggested keywords by adding specific words to your search or (importantly) excluding certain words.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+
+          
+                
+                
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                <h4>Simplified Keyword Planner Workflow</h4>
+                <div class="diagram-background">
+							<p class="text-center">Profile users: age, gender, location, education</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Brainstorm: words you think they would use to reach your resource</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Enter "stem keywords" to the Keyword Planner tool</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Evaluate suggestions, filter, save results</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Implement as part of an integrated SEO strategy</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Measure (Webmaster tools, Analytics) & repeat</p>
+							</div>
+            		</div>
 
         </div>
         <!-- /.container -->
 
     </div>
+    <!-- /.content-section-b -->
+    
     <!-- /.content-section-d -->
-    
-    
-
-    <div class="banner">
-
+   <footer>
         <div id="contact" class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Get in Touch - Get Online Today!</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                    <li><a href="https://twitter.com/Carawebs" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li><a href="https://www.facebook.com/carawebs" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-					</li>
-                    <li><a href="https://plus.google.com/+Carawebs/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <footer>
-        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                 <h3>Useful Resources</h3>
-                <p>http://www.google.com/insidesearch/howsearchworks/thestory/</p>
+                <p>
+						<ul>
+							<li><a href="http://www.google.com/insidesearch/howsearchworks/thestory/">How Search Works, by Google</a></li>
+							<li><a href="https://www.google.com/webmasters/tools/">Google Webmaster Tools</a></li>
+							<li><a href="http://www.google.com/analytics/">Google Analytics</a></li>
+							<li><a href="https://support.google.com/webmasters/answer/35769?hl=en">Google Webmaster Guidelines</a></li>
+						</ul>                
+                </p>
+                <h3>Stay in Touch</h3>
                     <ul class="list-inline">
                         <li><a href="http://carawebs.com">Carawebs Homepage</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li><a href="mailto:info@carawebs.com">Email Us</a>
-                        </li>
+              				</li>
+              				<li class="footer-menu-divider">&sdot;</li>
+                        <li>Tel: +353 (0)61 713 750</li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#">Carawebs on Twitter</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#">Carawebs on Facebook</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#">Carawebs on Google+</a></li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; <a href="http://carawebs.com">Carawebs 2014</a>. All Rights Reserved</p>
                     <p class="text-muted small">photo credit: <a href="http://www.flickr.com/photos/30827420@N04/8729044804/">r3vision</a>

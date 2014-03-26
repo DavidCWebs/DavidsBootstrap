@@ -61,14 +61,35 @@ h4 {
   width: 50%;
 }
 
+.navbar-fixed-top {
+	z-index: 1;
+}
 .video-wrapper {
   height: 0;
   padding-bottom: 56.25%; /* 16:9 */
   position: relative;
+  z-index: -1;
 }
 .video-wrapper iframe {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.diagram-background {
+	margin-top: 40px;
+	background: #f9f9f9;
+	padding: 20px;
+	margin-bottom: 40px;
+	border: solid 1px #adadad;
+}
+
+.diagram-background p {
+	font-size: 24px;
+}
+
+.diagram-background i.fa {
+	color: #428bca;
+	font-size: 52px;
 }
 
 /*.intro-header {
@@ -178,7 +199,8 @@ h4 {
 .banner {
 	padding: 100px 0;
 	color: #f8f8f8;
-	background: url(../img/banner-bg.jpg) no-repeat center center;
+	background-color: #c0c0c0;
+	/*background: url(../img/banner-bg.jpg) no-repeat center center;*/
 	background-size: cover;
 }
 
