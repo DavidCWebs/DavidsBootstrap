@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="David Egan" >
 
-    <title>Grayscale - Free One Page Theme for Bootstrap 3</title>
+    <title>Google Maps Demo Carawebs</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -15,47 +15,55 @@
     <!-- Fonts -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
 
     <!-- Custom Theme CSS -->
     <link href="css/maptest.css" rel="stylesheet">
-    <style>#map_canvas, #map_canvas_2, #map_canvas_3, #map_canvas_4 { width: 548px; height: 548px; }</style>
+    <style>#map_canvas, #map_canvas_2, #map_canvas_3, #map_canvas_4, #map_canvas_5, #map_canvas_6, #map_canvas_7, #map_canvas_8 { width:100%; height:510px; }</style>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <!-- Map 1 -->
-    <script>function initialize() {
+    <script>
+		var map4;
+		function initialize() {
 		var myOptions = {
 			zoom: 16,
-			center: new google.maps.LatLng(51.517319, -0.142791),
+			center: new google.maps.LatLng(51.5172,-0.1426),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true,
 			styles: [
+                {"stylers":[{"visibility": "off" }]},
+                {"featureType": "road", "stylers": [
+                    { "visibility": "on" }]},
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
+					{ "color": "#b5d334" },
+					{ "visibility": "on" },
+					{ "weight": 0.5 }]},
+				{"featureType": "road", "elementType": "geometry", "stylers": [
+                    { "weight": 0.5 },
+                    { "color": "#b5d334"}]},
 				{"featureType": "landscape", "stylers": [
-				  { "visibility": "on" },
-				  { "color": "#4b4b50" },
-				  ]
-				},
-				{"featureType": "road", "stylers": [
-                    { "color": "#b5d334" }
-                  ]
-                },
-				{"featureType":"water","stylers":[
-					{"hue":"#00B6FF"},
-					{"saturation":4.2},
-					{"lightness":-63.4},
-					{"gamma":1}
-				]},
-				{"featureType":"poi","stylers":[
-					{"hue":"#9FFF00"},
-					{"saturation":0},
-					{"lightness":0},
-					{"gamma":1}]
-					}
+					{ "visibility": "on" },
+					{ "color": "#4b4b50" },]},
+				{"featureType": "transit.line", "stylers": [
+					 { "visibility": "off" }]},
+				{"featureType": "transit.station", "stylers": [
+					 { "visibility": "on" }]},
+				{"featureType": "road", "elementType": "labels.icon","stylers": [
+                      { "visibility": "off" }]},
+				{"featureType": "road", "elementType": "labels.text", "stylers": [
+					{ "visibility": "on" },
+					{ "invert_lightness": true },
+					{ "weight": 0.4 },
+					{ "color": "#ffffff" }]},
+				{"featureType": "road.local", "elementType": "geometry", "stylers": [
+      			{ "visibility": "simplified" }]}
 			]
 		};
 
-		var map4 = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		map4 = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
-		var myLatLng = new google.maps.LatLng(51.517319, -0.14279);
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map4,
@@ -63,43 +71,61 @@
 		});
 		}
 		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map4.getCenter();
+			 google.maps.event.trigger(map4, "resize");
+			 map4.setCenter(center); 
+			});
 		</script>
 		<!-- Map 2 -->		
 		<script>
-		function initialize() {
-		var myOptions = {
-			zoom: 16,
-			center: new google.maps.LatLng(51.517319, -0.142791),
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-		};
-
-		var map2 = new google.maps.Map(document.getElementById("map_canvas_2"), myOptions);
-		//
-		var image = "http://davidegan.me/wp-content/uploads/2014/03/expedition_website_logo.png";
-		var myLatLng = new google.maps.LatLng(51.517319, -0.14279);
-		var beachMarker = new google.maps.Marker({
-		position: myLatLng,
-		map: map2,
-		icon: image
-		});
-		}
-		google.maps.event.addDomListener(window, "load", initialize);
+			
+		var map2; //Set the map variable --- this is now available to both event listeners and the initialize() function
+			function initialize() {
+			  var mapOptions = {
+			   center: new google.maps.LatLng(51.5172,-0.1426),
+			   zoom: 16,
+			   mapTypeId: google.maps.MapTypeId.ROADMAP,
+			   styles: [
+				{"featureType":"poi","stylers":[{ "visibility": "off" }]},
+				{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]}
+				]
+			  };
+			  map2 = new google.maps.Map(document.getElementById("map_canvas_2"),
+						mapOptions);
+				var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+				var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+				var beachMarker = new google.maps.Marker({
+					position: myLatLng,
+					map: map2,
+					icon: image
+					});
+					}
+			google.maps.event.addDomListener(window, 'load', initialize);
+			google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map2.getCenter();
+			 google.maps.event.trigger(map2, "resize");
+			 map2.setCenter(center); 
+			});
 		</script>
-		<!-- Map 3 -->		
+		<!-- Map 3 -->
 		<script>
+		var map3;
 		function initialize() {
 		var myOptions = {
 			zoom: 16,
-			center: new google.maps.LatLng(51.517319, -0.142791),
+			center: new google.maps.LatLng(51.5172,-0.1426),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			styles: [{"featureType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}]
+			styles: [
+			{"featureType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]},
+			{"featureType":"poi","stylers":[{ "visibility": "off" }]},
+			{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]}
+			]
 		};
 
-		var map3 = new google.maps.Map(document.getElementById("map_canvas_3"), myOptions);
-		//
-		var image = "http://davidegan.me/wp-content/uploads/2014/03/expedition_website_logo.png";
-		var myLatLng = new google.maps.LatLng(51.517319, -0.14279);
+		map3 = new google.maps.Map(document.getElementById("map_canvas_3"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map3,
@@ -107,25 +133,249 @@
 		});
 		}
 		google.maps.event.addDomListener(window, "load", initialize);
-		</script>
-		
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map3.getCenter();
+			 google.maps.event.trigger(map3, "resize");
+			 map3.setCenter(center); 
+			});
+		</script>		
 		<!-- Map 4 -->
 		<script>
+		var map1;
 		function initialize() {
 		var mapOptions = {
 			zoom: 16,
-			center: new google.maps.LatLng(51.517319, -0.142791)
-		}
-		var map = new google.maps.Map(document.getElementById('map_canvas_4'), mapOptions);
-		var image = 'http://davidegan.me/wp-content/uploads/2014/03/expedition_website_logo.png';
-		var myLatLng = new google.maps.LatLng(51.517319, -0.14279);
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+			{"featureType":"poi","stylers":[{ "visibility": "off" }]},
+			{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]}
+			]
+		};
+		map1 = new google.maps.Map(document.getElementById('map_canvas_4'), mapOptions);
+		var image = 'http://carawebs.com/maptest/img/expedition-map-pin.png';
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
-		map: map,
+		map: map1,
 		icon: image
 		});
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map1.getCenter();
+			 google.maps.event.trigger(map1, "resize");
+			 map1.setCenter(center); 
+			});
+		</script>
+		<!-- Map 1 -->
+    <script>
+		var map5;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true,
+			styles: [
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
+					  { "color": "#4b4b50" },
+					  { "visibility": "on" },
+					  { "weight": 5 }]},
+				{"featureType": "landscape", "stylers": [
+				  { "visibility": "on" },
+				  { "color": "#a5a5a5" },
+				  ]
+				},
+				{"featureType": "transit.line", "stylers": [
+					  { "visibility": "off" }
+					]
+				},
+				{"featureType": "road", "elementType": "labels.text", "stylers": [
+				  { "visibility": "on" },
+				  { "invert_lightness": true },
+				  { "weight": 0.4 },
+				  { "color": "#ffffff" }
+				]
+				},
+				{"featureType":"water","stylers":[
+					{"hue":"#00B6FF"},
+					{"saturation":4.2},
+					{"lightness":-63.4},
+					{"gamma":1}
+				]},
+				{"featureType":"poi","stylers":[
+					{ "visibility": "off" }]
+					}
+			]
+		};
+
+		map5 = new google.maps.Map(document.getElementById("map_canvas_5"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map5,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map5.getCenter();
+			 google.maps.event.trigger(map5, "resize");
+			 map5.setCenter(center); 
+			});
+		</script>
+		<!-- map 6 -->
+		<script>
+		var map6;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
+					  { "color": "#a5a5a5" },
+					  { "visibility": "on" },
+					  { "weight": 0.7 }]},
+				{"featureType": "road", "elementType": "geometry", "stylers": [
+					  { "weight": 0.7 }
+					]},
+				{"featureType": "landscape", "stylers": [
+				  { "visibility": "on" },
+				  { "color": "#818185" },
+					]},
+				{"featureType": "transit.line", "stylers": [
+					  { "visibility": "off" }
+					]},
+				{"featureType": "road", "elementType": "labels.text", "stylers": [
+				  { "visibility": "on" },
+				  { "invert_lightness": true },
+				  { "weight": 0.8 },
+				  { "color": "#ffffff" }
+				]},
+				{"featureType":"water","stylers":[
+					{"hue":"#00B6FF"},
+					{"saturation":4.2},
+					{"lightness":-63.4},
+					{"gamma":1}
+				]},
+				{"featureType":"poi","stylers":[
+					{ "visibility": "off" }]
+					}
+				]
+		};
+
+		map6 = new google.maps.Map(document.getElementById("map_canvas_6"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map6,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map6.getCenter();
+			 google.maps.event.trigger(map6, "resize");
+			 map6.setCenter(center); 
+			});
+		</script>
+		<!-- Map 7 -->
+		<script>
+		var map7;
+		function initialize() {
+		var myOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [{ "color": "#a5a5a5" }, { "visibility": "off" }]},
+				{"featureType": "landscape", "stylers": [{ "visibility": "on" }, { "color": "#4b4b50" }]},
+				{"featureType": "transit.line", "stylers": [{ "visibility": "off" }]},
+				{"featureType": "road", "stylers": [{ "color": "#818185" }]},
+                {"featureType": "road", "elementType": "labels.text", "stylers": [{ "visibility": "on" }, { "invert_lightness": true }, { "weight": 0.4 }, { "color": "#ffffff" }]},
+				{"featureType":"water","stylers":[{"hue":"#00B6FF"}, {"saturation":4.2}, {"lightness":-63.4}, {"gamma":1}]},
+				{"featureType":"poi","stylers":[{ "visibility": "off" }]}
+			]
+		};
+		map7 = new google.maps.Map(document.getElementById("map_canvas_7"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map7,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map7.getCenter();
+			 google.maps.event.trigger(map7, "resize");
+			 map7.setCenter(center); 
+			});
+		</script>
+		<!-- Map 8 -->
+		<script>
+		var map8;
+		function initialize() {
+		var myOptions = {
+			zoom: 13,
+			center: new google.maps.LatLng(51.5172,-0.1426),
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: [
+				{"featureType": "road", "elementType": "geometry.fill", "stylers": [
+					  { "color": "#a5a5a5" },
+					  { "visibility": "on" },
+					  { "weight": 0.7 }]},
+				{"featureType": "road", "elementType": "geometry", "stylers": [
+					  { "weight": 0.7 }
+					]},
+				{"featureType": "landscape", "stylers": [
+				  { "visibility": "on" },
+				  { "color": "#818185" },
+					]},
+				{"featureType": "transit.line", "stylers": [
+					  { "visibility": "off" }
+					]},
+				{"featureType": "road", "elementType": "labels.text", "stylers": [
+				  { "visibility": "on" },
+				  { "invert_lightness": true },
+				  { "weight": 0.8 },
+				  { "color": "#ffffff" }
+				]},
+				{"featureType":"water","stylers":[
+					{"hue":"#00B6FF"},
+					{"saturation":4.2},
+					{"lightness":-63.4},
+					{"gamma":1}
+				]},
+				{"featureType":"poi","stylers":[
+					{ "visibility": "off" }]},
+				{"featureType": "administrative", "stylers": [
+					{ "visibility": "on" },
+					{ "color": "#ffffff" },
+					{ "weight": 0.6 }]}
+				]
+		};
+
+		map8 = new google.maps.Map(document.getElementById("map_canvas_8"), myOptions);
+		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
+		var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map8,
+		icon: image
+		});
+		}
+		google.maps.event.addDomListener(window, "load", initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+			 var center = map8.getCenter();
+			 google.maps.event.trigger(map8, "resize");
+			 map8.setCenter(center); 
+			});
 		</script>
     
 
@@ -162,34 +412,60 @@
     </nav>
 
     <section class="intro">
-            <div class="container content-section">
+		<div class ="container content-section">
+		<div class = "row">
+					<div class="col">
+					<h1>Custom Map Variations</h1>
+					<p>Please note that all Google maps must carry the Google trademark link and terms to comply with the terms of use.</p>
+					</div>
+		</div>
+		</div>
+            <div class="container expedition-background top-padding">
+				
                 <div id ="map-grid">
                     <div class="map-box">
                         <h2>Map 1</h1>
-                        <div id="map_canvas"></div>
-                    
+                        <div id="map_canvas" class="map-border"></div>
+                        <p>This map is currently embedded on the client test site. Position marker probably needs a light coloured border.</p>
                     </div>
                     <div class="map-box">
                         <h2>Map 2</h1>
-                        <div id="map_canvas_2"></div>
-                    
+                        <div id="map_canvas_7" class="map-border"></div>
+                        <p>Includes Google user interface (slider & streetview icon on left, satellite selector top right) - which is probably better for user experience. These elements could be added to Map 1.</p>
                     </div>
                     <div class="map-box">
                         <h2>Map 3</h1>
-                        <div id="map_canvas_3"></div>
-                    
+                        <div id="map_canvas_2" class="map-border"></div>
+                        <p>More standard map styling - might be closer to what people expect, therefore (slightly) more usable.</p>
                     </div>
                     <div class="map-box">
                         <h2>Map 4</h1>
-                        <div id="map_canvas_4"></div>
-                        <p>Some text</p>
-                    
+                        <div id="map_canvas_3" class="map-border"></div>
+                        <p>Colour variation of map 3</p>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 5</h1>
+                        <div id="map_canvas_4" class="map-border"></div>
+                        <p>Colour variation of map 3</p>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 6</h1>
+                        <div id="map_canvas_5" class="map-border"></div>
+                        <p>Colour variation of map 1, with thicker roads.</p>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 7</h1>
+                        <div id="map_canvas_6" class="map-border"></div>
+                        <p>Colour variation of map 1.</p>
+                    </div>
+                    <div class="map-box">
+                        <h2>Map 8</h1>
+                        <div id="map_canvas_8" class="map-border"></div>
                     </div>
                     <div class="gridbreak"></div>
                 </div>
-
-					<div class="row">
-			        <div class="col-12">
+                <div class="row">
+			        <div id="contact" class="col-md-12">
 			        		<h2>Contact Us</h2>
 			                <p><a href:"mailto:info@carawebs.com">info@carawebs.com</a></p>
 			                <ul class="list-inline banner-social-buttons">
