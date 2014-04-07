@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-cssmin" : "0.6.1"
+  },
+  "name": "simple-frontpage",
+  "version": "1.0.0",
+  "description": "first grunt setup",
+  "main": "Gruntfile.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "DavidsBootstrap"
+  },
+  "author": "David Egan",
+  "license": "BSD"
+}
