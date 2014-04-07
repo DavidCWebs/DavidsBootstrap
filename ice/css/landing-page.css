@@ -1,0 +1,276 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+p {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+p.lead {
+	padding-right: 40px;
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 32px;
+	margin-top: 40px;
+}
+
+h2 {
+	font-size: 38px;
+	margin-top: 40px;
+}
+
+h4 {
+	font-size: 24px;
+	margin-top: 40px;
+}
+
+.lead {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.btn-lg {
+	border-radius: 0;
+}
+
+.top-padding {
+	padding-top: 60px;
+}
+
+.margin-top {
+	margin-top: 60px;
+}
+
+.margin-bottom {
+	margin-bottom: 60px;
+}
+
+.modal-dialog {
+  width: 50%;
+}
+
+.navbar-fixed-top {
+	z-index: 1;
+}
+.video-wrapper {
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.diagram-background {
+	margin-top: 40px;
+	background: #f9f9f9;
+	padding: 20px;
+	margin-bottom: 40px;
+	border: solid 1px #adadad;
+}
+
+.diagram-background p {
+	font-size: 24px;
+}
+
+.diagram-background i.fa {
+	color: #428bca;
+	font-size: 52px;
+}
+
+/*Return to top button*/
+/*Don't forget to add a suitable HTML element*/
+.go_top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: #000;
+	border: solid 1px #adadad;
+	padding: 5px 10px 0 10px;
+	font-size: 12px;
+	display: none;
+}
+a.go_top {
+	color:#000;
+}
+a.go_top:hover {
+	text-decoration: underline;
+}
+.go_top:hover {
+	opacity: 0.6;
+}
+
+/*.intro-header {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! *//*
+	padding-bottom: 50px;
+	color: #f8f8f8;
+	background: url(../img/first-background.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	z-index: 1;
+}
+*/
+.first_background {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	color: #f8f8f8;
+	background: url(../img/detective.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	
+}
+.intro-header {
+	padding-top: 50px; 
+	/*padding-bottom: 50px;*/
+	color: #f8f8f8;
+	background-color: rgba(0,0,0,.4);
+	/*background: url(../img/first-background.jpg) no-repeat center center;*/
+	background-size: cover;
+	text-align: center;
+	z-index: 1;
+}
+
+/**********************************/
+.intro-message {
+	position: relative;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+	margin: 0;
+	font-size: 5em;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.intro-divider {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message > h3 {
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+	.intro-message {
+		padding-bottom: 15%;
+	}
+
+	.intro-message > h1 {
+		font-size: 3em;
+	}
+
+	ul.intro-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.intro-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.intro-divider {
+		width: 100%;
+	}
+}
+
+.network-name {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.content-section-a {
+	background-color: #f8f8f8;
+	padding: 50px 0;
+}
+
+.content-section-b {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 50px 0;
+}
+
+.section-heading {
+	margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+	border-top: 3px solid #e7e7e7;
+	width: 200px;
+	float: left;
+}
+
+.banner {
+	padding: 100px 0;
+	color: #f8f8f8;
+	background-color: #c0c0c0;
+	/*background: url(../img/banner-bg.jpg) no-repeat center center;*/
+	background-size: cover;
+}
+
+.banner h2 {
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+	font-size: 3em;
+}
+
+.banner ul {
+	margin-bottom: 0;
+}
+
+.banner-social-buttons {
+	float: right;
+	margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+	ul.banner-social-buttons {
+		float: left;
+		margin-top: 15px;
+	}	
+}
+
+@media (max-width: 767px) {
+	.banner h2 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+		font-size: 3em;
+	}
+
+	ul.banner-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.banner-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}	
+}
+
+footer {
+	background-color: #f8f8f8;
+	padding: 50px 0;
+}
+
+p.copyright {
+	margin: 15px 0 0;
+}

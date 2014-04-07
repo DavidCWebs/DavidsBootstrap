@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="David Egan" >
+
+    <title>Digital Detectives</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Add custom CSS here -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
+        <div class="container">
+        
+ 			    <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Digital Detectives: Carawebs Workshop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                	<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            		<li class="hidden"> <a href="#page-top"></a> </li>
+                  <li class="page-scroll"><a href="#search-101">Search Basics</a></li>
+                  <li class="page-scroll"><a href="#strategy">Online SEO Strategy</a></li>
+                  <li class="page-scroll"><a href="#webmaster-tools">Webmaster Tools</a></li>
+                  <li class="page-scroll"><a href="#presentation">Keyword Exercise</a></li>
+                  <li class="page-scroll"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<div class="first_background"><!-- - this gets the background image -->
+	<div class="intro-header"><!-- This gets an opaque bg colour to allow darkening of the bg image -->
+	
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Digital Detectives</h1>
+                        <h3>Aligning Content With Your Users</h3>
+                        <p>Institution of Civil Engineers</p>
+                        <p class="lead">Workshop by David Egan of <a href ="http://carawebs.com">carawebs.com</a></p>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li><a href="https://twitter.com/Carawebs" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/carawebs" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+							</li>
+							<li><a href="https://plus.google.com/+Carawebs/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+							</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    
+    </div>
+    <!-- /.intro-header -->
+    </div><!-- /.first_background -->
+    
+    <div id="search-101" class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="section-heading">How Search Engines Work</h2>
+                    <p class ="lead">Search engines (like Google, Yahoo! and Bing) are basically robots that read every website on the internet, 
+                    creating an index based on what they read.</p>
+                    <p class="lead"> When a user searches for a term in Google, the search engine goes through the index that
+                     it created when it last crawled the web.</p>
+                     <p class="lead">Google then displays the search results that it thinks are most relevant for the user, 
+                     based on the search terms they used.</p>
+                    <p class="lead">The order in which Google displays results is based on the popularity of the various sites, 
+                    keyword density, and other factors - so the user sees a list of sites that the search engine believes are most relevant, ranked accordingly.</p>
+                    <p class ="lead">The words used on your site also help your users to decide whether or not your content is relevant to them.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+                	<h4>The Importance of Search Terms</h4>
+                	<p>Aligning content with the terms that people use when searching is crucial. The following video by Google Analytics takes a tongue-in-cheek look at this.</p>         
+                	 <div class="video-wrapper margin-bottom">
+	                    <iframe width="100%" height="100%" src="http://www.youtube.com/embed/cbtf1oyNg-8?rel=0" frameborder="0" allowfullscreen></iframe>
+	                </div>
+	                <hr>
+	                <h4>How Google Works</h4><p>As explained by Matt Cutts of Google.</p>
+	                <div class="video-wrapper">
+	                    <iframe width="100%" height="100%" src="http://www.youtube.com/embed/KyCYyoGusqs?rel=0" frameborder="0" allowfullscreen></iframe>
+	                </div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+        <!-- /.container -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="section-heading no-top-margin">Include Relevant Keywords</h2>
+                    <p class="lead">The word-cloud on the right shows the word density on the page 
+                    '<a href="http://www.ice.org.uk/topics/water/Best-practice-documents-water" target="_blank">Best practice in water'</a> from the ICE website.</p>
+                    <p class="lead">This page was found using the search term "Best practice water engineering" in a Google "incognito" search.</p>
+                    <p class="lead">How would a search engine interpret this content? Would it consider the web-page to be about "Document", or "Type"?</p>
+                    <p class="lead">Including the right keywords in your content doesn't just help you to rank well in search engines - it helps users determine whether or not to click through and look at your content.</p>
+                    <p class="lead"><a id="modal-1" href="#modal-container-1" data-toggle="modal" class="btn btn-default btn-lg"><span class="network-name" style="text-align: center;">Click here for more info on this page</span></a></p>
+							<!--Modal -->
+							<div class="modal fade" id="modal-container-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 class="modal-title" id="myModalLabel">
+												Search Engine Results Page
+											</h3>
+										</div>
+										<div class="modal-body">
+											<img class="img-responsive" alt="image" src="img/best-practices-water-screenshot.png">
+											<hr>
+											<div class="caption">
+												<p class="lead">Search term used: "Best practice water engineering"</p>
+												<p class="lead">Note that the page title does not match the Title Tag that displays on the search results page.</p>
+												<p class="lead"><a href="http://www.ice.org.uk/topics/water/Best-practice-documents-water">Link to page.</a></p>
+												<p class="lead">Meta data for this page is not optimised. Note the following:
+													<ul class="lead">
+														<li>Title tag should be instantly understandable and have less than 70 characters</li>
+														<li>Keywords should probably be early in the content block</li>
+														<li>Meta description should have less than 150 characters to avoid truncation</li>
+														<li>Meta data should be uniquely tailored for each page</li>
+														<li>Key content items should have a verified author - which helps them stand out in search results</li>
+													</ul>
+												</p>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Modal -->    
+							<p class="lead">Note that this page is generated dynamically by the ICE website, and it includes articles which have been tagged with the term "water". 
+							It appears that a number of articles have been tagged inappropriately, which "dilutes" the keywords on the landing page.</p>
+							<p class="lead"><em><strong>Finding the right keywords is not enough - SEO strategy needs to be integrated throughout your digital presence.</strong></em></p>         
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+                    <a href="http://www.wordle.net/show/wrdl/7681452/Water_Engineering_Wordle" 
+          title="Wordle: Water Engineering Wordle"><img class="img-responsive" src="img/water-words.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div id ="strategy" class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                   <h2 class="section-heading">Build an SEO Strategy</h2>
+                    <p class="lead">An effective search engine optimisation (SEO) strategy requires:
+							<ul class="lead">
+							<li>An understanding of users & their search workflow</li>
+							<li>Clear website goals</li>
+							<li>Alignment of site content with users needs: site structure, content quality and keywords</li>
+							<li>Agility: iteration on a cycle of measurement, evaluation and improvement</li>							
+							</ul>                    
+                    </p>
+                    <p class="lead">Above all else, you should create rich, useful content that naturally incorporates the keywords that potential visitors actually search for.</p>
+                    <h3>Users & the Search Workflow</h3>
+                    <p class="lead">The user workflow typically involves:
+                    	<ul class="lead">
+							<li>Search: The user enters terms into a search engine (usually Google)</li>
+							<li>Discovery: The user sees the content in search results</li>
+							<li>Interpretation: The user decides on relevance of the content (or preview content)</li>
+							<li>Conversion: The user clicks on the content, finds what they need and implements best practice</li>							
+							</ul> 
+                    </p>
+                    <h3>Search: Words Matter!</h3>
+	                     <p class="lead">The language you use in your content may not align with the words your potential users enter into search engines.</p>
+	                     <p class="lead"><em><strong>Determine the words that people use when searching for related content - include these words in your content.</strong></em></p>
+								<p class="lead">Although it is important to align your content with the terms that people use during search, you shouldn't focus on stuffing content with keywords.</p>
+								<p class="lead">Indeed, this practice is frowned upon by Google, and may cause your content to lose search rank.</p><p class="lead">Focus on 
+								good quality content that is useful for your visitors - but include search keywords in a natural way.</p>						
+							<h3>Search Ranking: Prominence</h3>
+								<p class="lead">Search engines use a range of signals to decide on how to rank a site for a particular search term. These signals are usually secret - to prevent 
+								"gaming" of search engines.</p>
+								<p class="lead">Google have stated that they use more than 200 signals. Probably the most important determinant of search prominence 
+								is the number of backlinks to your site.</p>
+								<p class="lead">Click the button below for more detailed information on search ranking.</p>
+								<p class="lead"><a id="modal-2" href="#modal-container-2" data-toggle="modal" class="btn btn-default btn-lg"><span class="network-name" style="text-align: center;">Click here for more info on search ranking</span></a></p>
+							<!--Modal -->
+							<div class="modal fade" id="modal-container-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 class="modal-title" id="myModalLabel">
+												Search Ranking
+											</h3>
+										</div>
+										<div class="modal-body">
+											<p class="lead">It is important that your web content is discoverable. Ideally, your online resources should be ranked highly in search engine results pages for relevant 
+											keywords so that people can find the content easily.</p>
+											<p class="lead">Search engines (like Google, Yahoo! and Bing) are basically robots that read every website on the internet, 
+											creating an index based on what they read.</p>
+											<p class="lead">Google is by far the most commonly used search engine, with <a href="http://gs.statcounter.com/#search_engine-ww-monthly-201205-201305">91% of 
+											worldwide search traffic</a> taking place on Google.</p>
+											<p class="lead"> Other search engines (e.g. Bing &amp; Yahoo) are likely to use very similar methods to index content and 
+											rank search results - so it is fairly safe to focus on Google.</p>
+											<p class="lead"><i><b>Google uses more than 200 different signals to rank websites and these signals are not completely public.</b></i>
+											<p class="lead"> 
+											The lack of transparency is designed to prevent site owners from “gaming” the system. These recommendations are based on the information that Google makes available and current 
+											best practice in terms of search engine optimisation.</p>
+											<p class="lead">When a user searches for a term in Google, the search engine goes through the index that it 
+											created when it last crawled the web. Google then displays the search results that it thinks are most relevant for the user, based 
+											primarily on the search terms they used. The order in which Google displays results is based on the popularity of the various sites, keyword density, 
+											and other factors - so the user sees a list of sites that the search engine believes are most relevant, ranked accordingly.</p>
+										<h3>Search Engine Optimisation</h3>
+											<p class="lead">Site content should be written primarily for human users. However, creating the best website in the world is pointless if it is not optimised for search engines - few people will ever see it.</p>
+											<p class="lead">Search Engine Optimisation (SEO) is the process of optimising your website so that it is prominently 
+											displayed in search engine results listings for targeted keywords. SEO involves careful crafting of content so that it is easily 
+											accessible by both human users and search engines.
+											</p>
+											</p>
+											<p class="lead">Usually, the higher a website is ranked on a results page, the more people will click through from the search engine and visit the content.</p>
+											<p class="lead">To rank highly in search engines for a given search term:
+										
+												<ul class="lead">
+													<li>Content must be indexed by search engines - content must be ”readable”, which means that HTML sites are good whereas Flash based sites are not</li>
+													<li>Content should be original and useful for users</li>
+													<li>Content should have good backlinks - authoritative external sites have links pointing to the site</li>
+													<li>Content should have good social proof - content is shared on social media, and site authors are individually verified</li>
+													<li>Content should be presented on a website that is uncluttered, free from malicious code, free from misleading adverts and is <a href="http://www.w3.org/">W3C</a> compliant</li>
+												</ul></p>
+											<p class="lead">There are a number of methods that can be used to increase the prominence of web pages in search engine results listings:
+										
+												<ul class="lead">
+													<li>Cross linking within a website can improve visibility for a target page</li>
+													<li>Including appropriate frequently searched keywords in content and meta-data (title tags &amp; meta-description)</li>
+													<li>Updating content regularly</li>
+													<li>High quality backlinks (incoming links)</li>
+												</ul></p>
+											<p class="lead">According to Google themselves, webmasters should:</p>
+											<p class="lead"><em><strong>"Create a useful, information-rich site, and write pages that clearly and accurately describe your content."</strong></em></p>
+											<p class="lead"><a href="http://support.google.com/webmasters/bin/answer.py?hl=en&amp;answer=35769">Google Webmaster Guidelines</a>, accessed 13 March 2014</p>
+										<h3>Backlinks</h3>
+											<p class="lead">There are many factors that influence search engine rankings. However, it is likely that one major ranking factor is 
+											the quantity and quality of "<a href="http://en.wikipedia.org/wiki/Backlink">backlinks</a>" (incoming links) that a site has. 
+											This is known as <a href="http://en.wikipedia.org/wiki/PageRank">PageRank</a>, and is the original indexing algorithm used by Google. 
+											Other search engines probably use similar criteria. Incoming links from credible related sites are likely to strongly contribute to a site’s position in search 
+											engine results pages. Content authors should therefore attempt to connect and engage with related sites in a natural and unforced manner.</p>
+											<p class="lead">Search engines may penalise sites that engage in “dishonest” link building strategies such as the practice of buying
+										 links. Search engines may also ignore <a href="http://en.wikipedia.org/wiki/Link_building">reciprocal links</a>, since these are not 
+										 a true reflection of site quality/popularity.</p>
+											<p class="lead">“Any links intended to manipulate <a href="http://en.wikipedia.org/wiki/PageRank">PageRank</a> or a site's ranking in Google search results 
+											may be considered part of a link scheme and a violation of Google’s <a href="https://support.google.com/webmasters/answer/answer.py?answer=35769">Webmaster Guidelines</a>.
+											This includes any behavior that manipulates links to your site or outgoing links from your site. The following are examples of link schemes 
+											which can negatively impact a site's ranking in search results:
+												<ul class="lead">
+													<li>Buying or selling links that pass <a href="http://en.wikipedia.org/wiki/PageRank">PageRank</a>. This includes exchanging money for links, or posts that contain links; exchanging goods or services for links; or sending someone a “free” product in exchange for them writing about it and including a link</li>
+													<li>Excessive link exchanges ("Link to me and I'll link to you") or partner pages exclusively for the sake of cross-linking</li>
+													<li>Large-scale article marketing or guest posting campaigns with keyword-rich anchor text links</li>
+													<li>Using automated programs or services to create links to your site”</li>
+												</ul>
+											</p>
+											<p class="lead">Google Webmaster Tools, <a href="https://support.google.com/webmasters/answer/66356">Link Schemes</a>, accessed 13 March 2014</p>
+											
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Modal -->
+							<p class="lead">According to Google, site owners should:</p><p class="lead"><em><strong>"Create a useful, information-rich site, and write pages that clearly 
+							and accurately describe your content.</strong></em>"<br> <a href="https://support.google.com/webmasters/answer/35769?hl=en">Google Webmaster Guidelines</a>, accessed 13 March 2014</p>            
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+							<h4>Relevant, Fresh, Unique Content</h4>
+		                	<p>This short video by the Google webmasters team explains the basics of a great website in less than two minutes. The take home message? Focus on users - not search engines.</p>         
+		                	 <div class="video-wrapper margin-bottom">
+			                    <iframe width="100%" height="100%" src="http://www.youtube.com/embed/y8s6Y4mx9Vw?rel=0" frameborder="0" allowfullscreen></iframe>
+			                </div>  
+			                <hr>                   
+                     <h4>The Google View: SEO Strategy</h4>
+	                	<p>A high level overview of the searcher persona workflow, and how to align website execution with the needs of users.</p>         
+	                	 <div class="video-wrapper margin-bottom">
+		                    <iframe width="100%" height="100%" src="http://www.youtube.com/embed/J_FgXr7mrkg?rel=0" frameborder="0" allowfullscreen></iframe>
+		                </div>
+		                <hr>
+		                <h4>Some Common SEO Mistakes</h4>
+		                	<p>Some clear SEO advice from Google, focused on best practice.</p>         
+		                	 <div class="video-wrapper margin-bottom">
+			                    <iframe width="100%" height="100%" src="http://www.youtube.com/embed/6AmRg3p79pM?rel=0" frameborder="0" allowfullscreen></iframe>
+			                </div>
+			                <hr>
+			             <h4>SEO Focus</h4>
+		                	<p>Google advise to focus on how people already arrive at your site - and to make popular content more prominent. Don't focus on ranking for "cherry" keywords - SEO should be more holistic.</p>         
+		                	 <div class="video-wrapper margin-bottom">
+			                    <iframe width="100%" height="100%" src="http://www.youtube.com/embed/jakpPhir_EE?rel=0" frameborder="0" allowfullscreen></iframe>
+			                </div>
+			                <hr>
+			              <h4>Avoid Content Scraping</h4>
+		                	<p>Clear guidelines on "content-scraping" and the impact it has on search ranking. In short, if your site shows external content, you must add significant value to the content.</p>         
+		                	 <div class="video-wrapper margin-bottom">
+			                    <iframe width="100%" height="100%" src="http://www.youtube.com/embed/yFxNda5Z4eE#t=42?rel=0" frameborder="0" allowfullscreen></iframe>
+			                </div>
+
+                </div>
+                
+            </div><hr>
+				<div class="row">
+					 <div class="col-lg-6 col-sm-6">
+					 <h3>Standing Out in Search</h3>
+					 	<p class="lead">Title tags and meta-descriptions are the titles and descriptions that are displayed on search engine results pages.</p>
+					 	<p class="lead">These pieces of information are often the first experience that users have of your online content.</p>
+					 	<p class="lead">Title tags and meta descriptions should include relevant keywords, and be easily understood by your users. 
+					 	In addition, these elements are used by search engines to determine what a web page is about.</p>
+					 	<p class="lead">People are more likely to click on a particular result if there is a compelling title & description on the search engine result page.</p>
+					 	<p class="lead">Titles should be no longer than 70 characters, and descriptions no longer than 150 characters - if they exceed these values, search engines will truncate
+					 	 them.</p>
+					 	 <h3>Online Strategy: Summary</h3>
+					 	 <ul class="lead">
+							<li>Be unique - do something cool which sets you apart from the competition</li>
+							<li>Create excellent content - which is highly valued by users</li>
+							<li>Include relevant keywords in your content</li>				 	 
+							<li>Have a site that is well optimised for users - good navigation, excellent content</li>
+							<li>Have good, accurate title tags and meta-descriptions</li>
+							<li>Check your stats - Google Webmaster Tools, Google Analytics</li>
+							<li>Be agile - respond to site traffic data</li>
+							<li>Attract buzz - source natural links, get social shares, run campaigns</li>
+							<li>Stay fresh - blog about current issues and evaluate and archive old, less relevant content</li>
+					 	 </ul>
+					 </div>
+					 <div class="col-lg-5 col-lg-offset-1">
+					 <h4>Title Tags & Meta Descriptions</h4>
+					 	<p>This image highlights the title tag with a blue arrow and the meta description with a red arrow</p>
+					 	<img class="img-responsive" src="img/seo-screenshot.png" alt="">
+					 <h4>Authorship</h4>
+					 	<p>Note that in the image above some of the results have author images.
+					 	It is likely that Google ranks pages higher when authorship of the page has been verified.
+					 	This trend has been evident for a while, and it looks like it will become more important.</p>
+					 	<p><blockquote>"Within search results, information tied to verified online profiles will be ranked higher than content 
+					 	without such verification, which will result in most users naturally clicking on the top (verified) results. 
+					 	The true cost of remaining anonymous, then, might be irrelevance.”</blockquote> Eric Schmidt, Executive Chairman, Google (2013)</p>
+					 	<p>In other words, it is likely that content created by verified authors will rank higher in search engine results pages - 
+					 	making content more discoverable and increasing the potential audience. In addition, being active in social networks will 
+					 	probably improve search engine ranking for an author. Because of this, content-creators should probably undergo Google authorship verification.</p>
+					 	<p>Having Google authorship makes a site listing in a search engine results page stand out. 
+					 	It also adds a human element to content - which is attributed to an actual person, with a link to that person’s Google+ page. 
+					 	Google authorship allows an individual's online work to be linked and in all likelihood makes it easier to become established as an expert 
+					 	in the eyes of search engines.</p>
+					 </div>			
+				</div>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-d -->
+    <div id="webmaster-tools" class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-9">
+                	<h2>Using Google Webmaster Tools</h2>
+							<p class="lead">This tool allows you to see your website as Google sees it, including:
+							<ul class="lead">
+							<li>What pages have been indexed by Google</li>
+							<li>Site backlinks: incoming links from external sites</li>
+							<li>The keywords used when people reach your site through Google search</li>
+							</ul>
+							</p>
+							<h3>Using the Tool</h3>
+							<p class="lead">To use the tool, navigate to <a href="https://www.google.com/webmasters/tools/">Google Webmaster Tools</a> (or just Google that term) and login using the details provided.</p>
+							<h3>Search Queries</h3>
+							<p class="lead">Click on "Search Traffic" >> "Search Queries" to see a ranked list of queries that people entered into search 
+							and led to your site.</p>
+							<p class="lead">This page shows impressions, clicks, click through rate ("CTR"), as well as the average position of the site in 
+							search results for this query. Click the query on this page to see the individual pages on the site that have been clicked into as a 
+							result of this search query.</p>
+							<p class="lead">If a particular page receives a lot of impressions but has a poor click through rate, you should look at title tags 
+							and meta description of pages - it is likely that these are sub-optimal.</p>
+							<h3>Top Pages from Search</h3>
+							<p class="lead">On the "Search Queries" page, click the "Top Pages" tab to see your site pages ranked by the frequency 
+							that they are visited from Google search. This is a useful snapshot of how your different pages are performing.</p>
+							<p class="lead"></p>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    
+    
+    <div id="presentation" class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <h2 class="section-heading">Keyword Exercise</h2>
+                    <p class="lead">Click the button below to access the Google Adwords account that we have set up for this workshop. 
+                    This will open in a new browser tab. You should have been emailed the login details for this account.</p>
+                    <p class="lead"><a href="http://www.google.com/adwords/" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">Google Adwords Account</span></a></p>
+						<h3>Sample Keyword Analysis</h3>						
+						<p class="lead">Follow <a href="https://docs.google.com/spreadsheet/ccc?key=0Au7kFyoY91EmdEVyWFdtVUd1amVucXhORlVEcFQxT1E&usp=drive_web#gid=0" target="_blank">this link</a>
+						 to view a sample spreadsheet sorted into searches made per month. This is an example Keyword analysis that used the seed keywords:
+						 <ul class="lead">
+							 <li>"water"</li>
+							 <li>"water management"</li>
+							 <li>"waste water"</li>
+							 <li>"waste water management"</li>
+							 <li>"water supply system"</li>
+							 <li>"sustainable water management"</li>
+							 <li>"water infrastructure"</li>
+						 </ul>
+						 </p>
+						<h3>Keyword Analysis Instructions</h3>
+						<p class="lead">Click the button below for a pop-up with detailed instructions that will help you carry out your own the keyword analysis:</p>
+						<p class="lead"><a id="modal-3" href="#modal-container-3" class="btn btn-default btn-lg" data-toggle="modal"><span class="network-name">Detailed instructions: keywords exercise</span></a></p>
+							<div class="modal fade" id="modal-container-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											<h3 class="modal-title" id="myModalLabel">
+												Using the Google Keyword Planner Tool: Cheat Sheet
+											</h3>
+										</div>
+										<div class="modal-body">
+																				<p class="lead">Identify your user. Be specific - consider age, educational status, gender etc. and repeat this exercise as necessary 
+																				to target different users.</p>
+																				<p class="lead">Brainstorm your keywords with your user and with a particular resource (web page) in mind. 
+																				What words do you think your user would use when searching for this information? 
+																				Organise and expand on the keywords that you think are relevant to your user. 
+																				Start with one keyword and then expand on that word to turn it into a short phrase. These short phrases are called keyword stems.</p>
+																				<p class="lead">Type your keywords into a single column in a spreadsheet. You could have hundreds of words and word combinations - 
+																				Google Adwords can handle 200 phrases at a time - but you’re probably better off starting with no more than five or six tightly focused keyword stems.</p>
+																					<ul class="lead">
+																						<li>In Google Adwords, click on the menu item “Tools” in the top left hand side of the screen</li>
+																						<li>A drop down menu will appear. Click on “Keyword Planner”</li>
+																						<li>Look down the screen and click on “Search for new keyword and ad group ideas”</li>
+																						<li>Copy your keyword ideas from your spreadsheet and then paste them into the top box labelled “Your product or service”</li>
+																						<li>Click the blue button labelled “Get Ideas”</li>
+																						<li>Once you have clicked the “Get Ideas” button you will be presented with a table containing a list of “Ad group ideas” based on your keywords. This information is not relevant for this search exercise</li>
+																						<li>Click the tab labelled “Keyword Ideas”</li>
+																						<li>You should then have a screen that shows the keywords you inputted along with suggested keywords from Google</li>
+																						<li>Look through the suggested keywords carefully - not all of them will be relevant to your user</li>
+																						<li>You can download your keywords into a spreadsheet</li>
+																					</ul>
+																					<p class="lead">This is a very basic guide on how to use the keyword planner. Once you get familiar with the keyword planner 
+																					you can go on to filter the suggested keywords by adding specific words to your search or (importantly) excluding certain words.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						</div>
+
+          
+                
+                
+                <div class="col-lg-5 col-lg-offset-1 col-sm-6">
+                <h4>Simplified Keyword Planner Workflow</h4>
+                <div class="diagram-background">
+							<p class="text-center">Profile users: age, gender, location, education</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Brainstorm: words you think they would use to reach your resource</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Enter "stem keywords" to the Keyword Planner tool</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Evaluate suggestions, filter, save results</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Implement as part of an integrated SEO strategy</p>
+							<p class="text-center"><i class="fa fa-chevron-circle-down"></i></p>
+							<p class="text-center">Measure (Webmaster tools, Analytics) & repeat</p>
+							</div>
+            		</div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+    
+    <!-- /.content-section-d -->
+   <footer>
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <h3>Useful Resources</h3>
+                <p>
+						<ul>
+							<li><a href="http://www.google.com/insidesearch/howsearchworks/thestory/">How Search Works, by Google</a></li>
+							<li><a href="https://www.google.com/webmasters/tools/">Google Webmaster Tools</a></li>
+							<li><a href="http://www.google.com/analytics/">Google Analytics</a></li>
+							<li><a href="https://support.google.com/webmasters/answer/35769?hl=en">Google Webmaster Guidelines</a></li>
+						</ul>                
+                </p>
+                <h3>Stay in Touch</h3>
+                    <ul class="list-inline">
+                        <li><a href="http://carawebs.com">Carawebs Homepage</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="mailto:info@carawebs.com">Email Us</a>
+              				</li>
+              				<li class="footer-menu-divider">&sdot;</li>
+                        <li>Tel: +353 (0)61 713 750</li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#">Carawebs on Twitter</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#">Carawebs on Facebook</a></li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="#">Carawebs on Google+</a></li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; <a href="http://carawebs.com">Carawebs 2014</a>. All Rights Reserved</p>
+                    <p class="text-muted small">photo credit: <a href="http://www.flickr.com/photos/30827420@N04/8729044804/">r3vision</a>
+                    via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/seo.js"></script>
+</body>
+
+</html>
