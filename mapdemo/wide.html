@@ -27,11 +27,11 @@
 		var map4;
 		function initialize() {
 		var myOptions = {
-			zoom: 12,
+			zoom: 10,
 			center: new google.maps.LatLng(52.713211,-8.872517),
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false,
-			disableDefaultUI: true,
+			disableDefaultUI: false,
 			styles: [
                 {"stylers":[{"visibility": "off" }]},
                 {"featureType": "road", "stylers": [
@@ -65,18 +65,77 @@
 					  { "color": "#ffffff" },
 					  { "weight": 0.6 }]}
 			]
+		
+		
+		
 		};
 
 		map4 = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
-		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
-		var beachMarker = new google.maps.Marker({
-		position: myLatLng,
-		map: map4,
-		icon: image
-		});
+		var image = "http://carawebs.com/wp-content/uploads/2014/04/star.png";
+		var myLatLng = new google.maps.LatLng(52.713211,-8.872517);
+		var myLatLng2 = new google.maps.LatLng(52.813211,-8.892517);
+		
+			  var contentString = '<div id="content" style="color: #000;">'+
+				  '<h4 id="firstHeading" class="firstHeading">The Business</h4>'+
+				  '<div id="bodyContent">'+
+					'<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+					  'sandstone rock formation in the southern part of the '+
+					  'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+					  'south west of the nearest large town, Alice Springs; 450&#160;km '+
+					  '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+					  'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+					  'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+					  'Aboriginal people of the area. It has many springs, waterholes, '+
+					  'rock caves and ancient paintings. Uluru is listed as a World '+
+					  'Heritage Site.</p>'+
+					  '<p>Attribution: Uluru, <a href="http://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+					  'http://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+					  '(last visited June 22, 2009).</p>'+
+				  '</div>'+
+				  '</div>';
+				  
+			  var contentString2 = '<div id="content" style="color: #000;">'+
+				  '<h4 id="firstHeading" class="firstHeading">The 2nd Business</h4>'+
+				  '<div id="bodyContent">'+
+				  '<p>Some information.</p>'+
+				  '</div>'+
+				  '</div>';
+
+			  var infowindow = new google.maps.InfoWindow({
+				  content: contentString
+			  });
+			  
+			  var infowindow2 = new google.maps.InfoWindow({
+				  content: contentString2
+			  });
+
+			  var marker = new google.maps.Marker({
+				  position: myLatLng,
+				  icon: image,
+				  map: map4,
+				  title: 'The Business'
+			  });
+			  
+			  var marker2 = new google.maps.Marker({
+				  position: myLatLng2,
+				  icon: image,
+				  map: map4,
+				  title: 'The 2nd Business'
+			  });
+			  
+			  google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map4,marker);
+			  });
+			  
+			  // Open 2nd marker
+			  google.maps.event.addListener(marker2, 'click', function() {
+				infowindow2.open(map4,marker2);
+			  });
+		
+		
 		}
 		google.maps.event.addDomListener(window, "load", initialize);
+		
 		google.maps.event.addDomListener(window, "resize", function() {
 			 var center = map4.getCenter();
 			 google.maps.event.trigger(map4, "resize");
@@ -100,7 +159,7 @@
 			  };
 			  map2 = new google.maps.Map(document.getElementById("map_canvas_2"),
 						mapOptions);
-				var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+				var image = "http://carawebs.com/wp-content/uploads/2014/04/star.png";
 				var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 				var beachMarker = new google.maps.Marker({
 					position: myLatLng,
@@ -135,7 +194,7 @@
 		};
 
 		map3 = new google.maps.Map(document.getElementById("map_canvas_3"), myOptions);
-		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var image = "http://carawebs.com/wp-content/uploads/2014/04/star.png";
 		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
@@ -168,7 +227,7 @@
 			]
 		};
 		map1 = new google.maps.Map(document.getElementById('map_canvas_4'), mapOptions);
-		var image = 'http://carawebs.com/maptest/img/expedition-map-pin.png';
+		var image = 'http://carawebs.com/wp-content/uploads/2014/04/star.png';
 		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
@@ -227,7 +286,7 @@
 		};
 
 		map5 = new google.maps.Map(document.getElementById("map_canvas_5"), myOptions);
-		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var image = "http://carawebs.com/wp-content/uploads/2014/04/star.png";
 		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
@@ -288,7 +347,7 @@
 		};
 
 		map6 = new google.maps.Map(document.getElementById("map_canvas_6"), myOptions);
-		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var image = "http://carawebs.com/wp-content/uploads/2014/04/star.png";
 		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
@@ -327,7 +386,7 @@
 			]
 		};
 		map7 = new google.maps.Map(document.getElementById("map_canvas_7"), myOptions);
-		var image = "http://carawebs.com/maptest/img/expedition-map-pin.png";
+		var image = "http://carawebs.com/wp-content/uploads/2014/04/star.png";
 		var myLatLng = new google.maps.LatLng(51.5172,-0.1426);
 		var beachMarker = new google.maps.Marker({
 		position: myLatLng,
@@ -382,8 +441,8 @@
 		<div class ="container content-section">
 		<div class = "row">
 					<div class="col">
-					<h1>Custom Map Variations</h1>
-					<p>Please note that all Google maps must carry the Google trademark link and terms to comply with the terms of use.</p>
+					<h1>Custom Map Variations: Full Width</h1>
+					<p>Mouse wheel scrolling has been disabled on these maps. Please note that all Google maps must carry the Google trademark link and terms to comply with the terms of use.</p>
 					</div>
 		</div>
 		</div>
